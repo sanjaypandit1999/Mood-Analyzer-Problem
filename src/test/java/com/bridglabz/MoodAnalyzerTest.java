@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class MoodAnalyzerTest {
     @Test
     public void givenMessageWhenProperShouldReturnSad() {
-        MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in sad mood");
         String mood = moodAnalyzer.analyseMood();
         Assertions.assertEquals("Sad",mood);
     }
