@@ -8,13 +8,14 @@ public class MoodAnalyzerTest {
     @Test
     public void givenMessageWhenProperShouldReturnSad() {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
-        String mood = moodAnalyzer.analyseMood("I am in sad mood");
+        String mood = moodAnalyzer.analyseMood();
         Assertions.assertEquals("Sad",mood);
     }
     @Test
     public void givenMessageWhenProperShouldReturnHappy() {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
-        String mood = moodAnalyzer.analyseMood("I am in any mood");
+        String mood = moodAnalyzer.analyseMood();
         Assertions.assertEquals("Happy",mood);
     }
+
 }
