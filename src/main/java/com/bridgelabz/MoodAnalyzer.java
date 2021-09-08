@@ -14,8 +14,8 @@ public class MoodAnalyzer {
                 return "Happy";
             }
         }
-        catch (Exception e){
-            throw new MoodAnalysisException("Please enter proper message");
+        catch (NullPointerException e){
+            throw new MoodAnalysisException("Please enter proper message", MoodAnalysisException.ExceptionType.NULL);
         }
     }
 }

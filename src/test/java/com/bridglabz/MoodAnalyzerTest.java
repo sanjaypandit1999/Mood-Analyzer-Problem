@@ -22,7 +22,8 @@ public class MoodAnalyzerTest {
             MoodAnalyzer moodAnalyzer = new MoodAnalyzer(null);
              String mood = moodAnalyzer.analyseMood();
         } catch (MoodAnalysisException e) {
-            e.printStackTrace();
+            Assertions.assertEquals(MoodAnalysisException.ExceptionType.NULL, e.type);
+            System.out.println(e.getMessage());
         }
     }
 
